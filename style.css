@@ -1,0 +1,171 @@
+body{
+    position: relative;
+    margin: 0px;
+    
+}
+.container{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   background-color: brown;
+}
+.container > input{
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid white;
+    outline: none;
+}
+.container > button{
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: none;
+    border: 1px solid black;
+    color: brown;
+    background-color: white;
+    cursor: pointer;
+}
+.container > button:hover{
+   transition: 1.0s;
+    background-color: black;
+    color: white;
+}
+
+.container > button:active{
+    scale: 1.03;
+}
+
+.card-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.card-container > div{
+    width: 350px;
+    color: white;
+    background-color: brown;
+    padding: 0px 0px 20px 20px;
+    border-radius: 25px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.247);
+}
+.input{
+    padding: 10px 140px 10px 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+.card-container > div > button{
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px 40px;
+  
+    border-radius: 15px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.card-container > div > button:hover{
+    background-color: white;
+    color: brown;
+    
+}
+.card-container > div > button:active{
+    scale: 1.03;
+}
+
+#showBtn{
+    position: fixed;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 1px solid black;
+    
+    background-color: black;
+    color: brown;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.315);
+}
+#showBtn:hover{
+    background-color: black;
+    color: white;
+}
+#showBtn:hover:active{
+    scale: 1.03;
+}
+.container2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    border: 1px solid black;
+    height: 100vh;
+    background-color: brown;
+}
+.containerHidden{
+    animation: hiddenn 1.0s forwards;
+}
+.containerShow{
+    animation: showw 1.0s forwards;
+}
+@keyframes hiddenn{
+    to{
+      transform: translate(-100%);
+    }
+}
+@keyframes showw{
+    from{
+        transform: translate(-100%);
+    }
+}
+.searchBar{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+.searchBar > input{
+    padding: 10px 90px 10px 10px;
+     border-radius: 10px;
+     outline: none;
+     border: 1px solid white;
+     background: none;
+     color: white;
+}
+.searchBar > button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+   
+}
+.searchBar > button:hover{
+    background-color: white;
+    color: brown;
+}
+.searchBar > button:active{
+    scale: 1.03;
+}
+#hiddenBtn{
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.aboutStudetns{
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
